@@ -45,9 +45,37 @@
     /* Your code starts here */
     /* CODE AREA */
 
-    .container {}
+    .container {
+      display: grid;
+      grid-template-rows: 1fr 1fr ;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
 
-    .a {}
+    .a {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+    .b {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    .c {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    .d {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+    .e {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    .f {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
 
     /* END CODE AREA */
   </style>
